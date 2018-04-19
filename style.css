@@ -1,64 +1,76 @@
+
+/*
+========================
+Base Styles
+========================
+*/
+
 *, *:before, *:after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  padding: 20px;
+	padding-top: 50px;
 }
-
-input {
-  display: inline-block;
-}
-
-input[type="text"] {
-  padding: 10px;
-  background: transparent;
-  border: 1px solid #b2b2b2;
-}
-
-.list-body {
-  max-width: 468px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  background: #eee;
-  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.4);
-  text-align: center;
-}
-
-.inner-wrapper {
-  width: 100%;
-  text-align: center;
-}
-
-.title {
-  text-transform: uppercase;
-  background: #323232;
-  color: #eee;
-  max-width: 100%;
-}
-
-.title h1 {
-  margin-top: 0;
-}
-
-input[type="checkbox"] {
-  height: 25px;
-  width: 25px;
-  margin-right: 10px;
-}
-
-input[type="button"] {
-  margin-left: 10px;
-}*/
 
 /*
-===========
-Overwrite MDL
-===========
+========================
+Header Styles
+========================
 */
 
-.mdl-button--raised {
-  box-shadow: none!important;
+.list-header {
+	background:
+    /* top layer */
+    linear-gradient(
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.55)
+    ),
+    /* bottom layer is image */
+    url("../images/hero.jpg")no-repeat center;
+	background-size: cover;
+}
+
+/*
+========================
+Grid Layout Styles
+========================
+*/
+
+.mdl-grid .mdl-cell h1 {
+	letter-spacing: 4px;
+}
+
+div.mdl-grid {
+	max-width: 540px;
+	background: #fbfbfb;
+}
+
+.mdl-cell {
+	text-align: center;
+	position: relative;
+}
+
+/*
+========================
+Add Button Styles
+========================
+*/
+
+.add-btn {
+	position: absolute;
+	bottom: -30px;
+	left: 5%;
+	z-index: 55555;
+}
+
+/*
+========================
+List Styles
+========================
+*/
+
+ul#toDoList li {
+  display: flex;
+  justify-content: space-between;
 }

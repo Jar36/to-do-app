@@ -35,13 +35,16 @@ function onReady() {
       const newLi = document.createElement('li');
       const checkbox = document.createElement('input');
       const deleteButton = document.createElement('input');
+
       checkbox.type = "checkbox";
 
       newLi.textContent = toDo.title;
 
+      newLi.className = "mdl-list__item";
       deleteButton.className = 'mdl-button mdl-js-button mdl-button--raised mdl-button--colored';
       deleteButton.type = 'button';
       deleteButton.value = 'Delete Item';
+
 
       toDoList.appendChild(newLi);
       newLi.prepend(checkbox);
