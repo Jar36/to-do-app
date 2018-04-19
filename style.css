@@ -1,0 +1,64 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+input {
+  display: inline-block;
+}
+
+input[type="text"] {
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #b2b2b2;
+}
+
+.list-body {
+  max-width: 468px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background: #eee;
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.inner-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  background: #323232;
+  color: #eee;
+  max-width: 100%;
+}
+
+.title h1 {
+  margin-top: 0;
+}
+
+input[type="checkbox"] {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+input[type="button"] {
+  margin-left: 10px;
+}
+
+/*
+===========
+Overwrite MDL
+===========
+*/
+
+.mdl-button--raised {
+  box-shadow: none!important;
+}
